@@ -21,7 +21,7 @@ const Footer = () => {
       <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
         {/* LinkedIn */}
         <a
-          href="https://www.linkedin.com/in/your-username"
+          href="https://www.linkedin.com/in/param-gupta-9206092b9/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-primary transition"
@@ -39,7 +39,7 @@ const Footer = () => {
 
         {/* GitHub */}
         <a
-          href="https://github.com/your-username"
+          href="https://github.com/Param-gupta03"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-primary transition"
