@@ -13,7 +13,7 @@ const Connections = () => {
       const res = await axios.get(BASE_URL + "/user/connections", {
         withCredentials: true,
       });
-      dispatch(addConnections(res?.data?.data));
+      dispatch(addConnections(res.data.data));
     } catch (err) {
       // Handle Error Case
       console.error(err);
@@ -55,6 +55,9 @@ const Connections = () => {
               {age && gender && <p>{age + ", " + gender}</p>}
               <p>{about}</p>
             </div>
+            <Link to={"/chat/" + _id}>
+              <button className="btn btn-primary">Chat</button>
+            </Link>
           </div>
         );
       })}
