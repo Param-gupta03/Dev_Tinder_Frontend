@@ -26,7 +26,6 @@ const Body = () => {
   }
   catch(err){
     navigate("/login")
-    console.error(err);
 
   }
 }
