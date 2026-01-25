@@ -27,7 +27,7 @@ const NavBar = () => {
 
       {user && (
         <div className="flex items-center gap-3">
-          <span className="text-white">Wellcome, {user.firstName}</span>
+          <span className="text-white">Hi, {user.firstName}</span>
 
           <div className="dropdown dropdown-end">
             <div

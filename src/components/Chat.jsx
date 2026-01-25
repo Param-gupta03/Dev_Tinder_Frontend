@@ -20,12 +20,12 @@ const Chat = () => {
     console.log(chat.data.messages);
 
     const chatMessages = chat?.data?.messages.map((msg) => {
-      const { senderId, text,updatedAt } = msg;
+      const { senderId, text,createdAt } = msg;
       return {
         firstName: senderId?.firstName,
         lastName: senderId?.lastName,
         text,
-        updatedAt
+        createdAt
         
       };
     });
@@ -84,7 +84,7 @@ const Chat = () => {
               <div className="chat-header">
                 {`${msg.firstName}  ${msg.lastName}`}
                 <time className="text-xs opacity-50">
-                    {new Date(msg.updatedAt).toLocaleTimeString([], {
+                    {new Date(msg.createdAt).toLocaleTimeString([], {
                     day: "2-digit",
                     month: "short",
                     year: "numeric",
